@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/본인아이디/config-repo  # ✅ 본인 GitHub 주소로 수정
+          search-paths: '{application}'  # service-a, service-b 등의 디렉토리명
